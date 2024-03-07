@@ -9,4 +9,6 @@ public interface IAccountsService {
 
     //update successfull or not
     boolean updateAccount(CustomerDto customerDto);
+
+    boolean deleteAccount(String mobileNumber);
 }
