@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(path = "/api",produces = {MediaType.APPLICATION_JSON_VALUE})
 @Validated //controllerdaki validationu sağlamak için
 public class AccountsController {
-    private IAccountsService iAccountsService;
+    private final IAccountsService iAccountsService;
     //AllArgsConstructor ile de yapabilirdik
     public AccountsController(IAccountsService iAccountsService) {
         this.iAccountsService = iAccountsService;
